@@ -36,7 +36,7 @@ def handle_calculate_IK(req):
             joint_trajectory_point.positions = calculate_IK(req.poses[x])
             joint_trajectory_list.append(joint_trajectory_point)
 
-            print(joint_trajectory_point.positions)
+            check_IK(req.poses[x], joint_trajectory_point.positions)
 
         rospy.loginfo("length of Joint Trajectory List: %s" % len(joint_trajectory_list))
         return CalculateIKResponse(joint_trajectory_list)
