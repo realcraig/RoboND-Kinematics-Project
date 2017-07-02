@@ -5,9 +5,9 @@
 
 [//]: # (Image References)
 
-[theta3]: ./misc_images/IMG_6701.JPG
-[theta2]: ./misc_images/IMG_6702.JPG
-[dhparams]: ./misc_images/IMG_6703.JPG
+[theta3]: ./misc_images/IMG_6701.png
+[theta2]: ./misc_images/IMG_6702.png
+[dhparams]: ./misc_images/IMG_6703.png
 [complete_run]: ./misc_images/complete_run.png
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/972/view) Points
@@ -15,7 +15,8 @@
 
 
 ### Kinematic Analysis
-#### 1. 
+#### 1. DH Parameters
+
 I used the following diagram to determine DH parameters:
 
 ![DH Parameter Diagram][dhparams]
