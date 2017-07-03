@@ -120,8 +120,8 @@ by adding in the translation from the gripper pose. See transform_base_gripper()
 
 To compute the wrist center I first computed R_corr to convert from URDF to DH space. It is a rotation about the Z axis 
 by 180 degrees followed by a rotation about the Y axis by -90 degrees. I then compute the rotation matrix for the wrist
-by using the roll, pitch, and yaw values of the end effector pose (converted from the quarternion). It is an extrinsic 
-rotation sequence `Rrpy = Rz(yaw) * Ry(pitch) * Rx(roll) * R_corr`. Finally, I find the wrist center by translation along
+by using the roll, pitch, and yaw values of the end effector pose (converted from the quarternion). It is an intrinsic 
+rotation sequence `Rrpy = Rz(yaw) * Ry(pitch) * Rx(roll) * R_corr.T`. Finally, I find the wrist center by translation along
 the Z axis of the gripper the distance from the gripper to the wrist center.
 
     # correction from URDF to DH (zy intrinsic)
